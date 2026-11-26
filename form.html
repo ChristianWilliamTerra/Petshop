@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cabecalho.css">
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/form.css"/>
+    <link rel="stylesheet" href="./css/rodape.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap" rel="stylesheet">
+    <title>Pet Feliz</title>
+</head>
+<header class="cabecalho">
+    <h1 class="cabecalho_titulo">Petshop Pet Feliz</h1>
+    <a href="index.html" class="cabecalho_button">Home</a>
+    <a href="#servico" class="cabecalho_button">Serviços</a>
+    <a href="#contato" class="cabecalho_button">Contato</a>
+</header>
+<body>
+    <form action="https://formsubmit.co/cris.ssterra52@gmail.com" method="POST">
+        <fieldset class="formulario">
+            <p>Dados Pessoais</p>
+            <label>Nome:</label>
+            <input type="text" name="Nome" placeholder="Digite seu Nome Completo" required>    
+            <label>Endereço:</label>
+            <input type="text" name="endereco" placeholder="Digite seu Endereço" required>
+            <label>CPF:</label>
+            <input type="number" name="cpf" placeholder="Digite seu CPF" pattern="[0-9]{11}" required>
+            <div>
+                <label>Sexo:</label>
+                <br>
+                <input type="radio" value="masculino" name="sexo">
+                <label>Masculino</label>
+                <input type="radio" value="feminino" name="sexo">
+                <label>Feminino</label>
+            </div>
+            
+            <label>Telefone:</label>
+            <input type="number" name="telefone" placeholder="Digite seu Numero" pattern="[0-9]{12}" required>  
+            <label>E-mail:</label>
+            <input type="email" name="email" placeholder="Digite seu Email">
+            
+            <p>Dados do Pet</p>
+            <label>Nome:</label>
+            <input type="text" name="Nome" placeholder="Digite Nome do seu pet" >
+            <label>Raça:</label>
+            <input type="text" name="Nome" placeholder="Digite a raça do seu pet" >
+            <label>Idade:</label>
+            <input type="number" name="Nome" placeholder="Digite idade do seu pet" pattern="[0-9]{2}">
+            <label for="">Envio dos dados cadastrais</label>
+            <input class="botao_enviar" type="submit">
+        </fieldset>
+    </form>
+</body>
+<footer id="contato" class="rodape">
+    <h3>Todos os direitos autorais reservados a Christian W. Terra</h3>
+    <p>Contato: christian.terra@edu.pucrs.br</p>
+</footer>
+</html>
