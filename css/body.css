@@ -1,0 +1,53 @@
+.servicos_titulo {
+    text-align: center;
+    margin: 1em;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.servicos {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+
+    margin: 2em;
+}
+
+.servicos_box--texto{
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+/* Fazendo o efeito carrossel */
+
+.carrossel {
+    width: 100%;
+    max-width: 900px;
+    height: 450px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slides {
+    display: flex;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    flex: 0 0 100%;
+    object-fit: cover;
+}
+
+/* Fim do efeito carrossel */
+
+.servicos_box--texto {
+    max-width: 500ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 1em;
+}
